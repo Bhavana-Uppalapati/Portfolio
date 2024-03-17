@@ -71,19 +71,7 @@ html{
   }
   
   
-  /* #banner .background::before{
-        
-        
-          background-color: var(--primary-color);
-         
-          content: "";
-          width: 390px;
-          height: 390px;
-        
-          position: absolute;
-          border-radius:62% 38% 61% 39% / 47% 43% 57% 53%;
-          animation: move infinite 3s ease-in-out ;
-  } */
+
   @keyframes move {
              
     50%{
@@ -100,14 +88,7 @@ html{
   
   }
  
-  /* #about_me .about{
-      background-color: var(--primary-color);
-      height: 350px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  } */
+ 
   #about_me h2{
     font-size: 3rem;
   }
@@ -279,6 +260,8 @@ html{
       max-width: 400px;
       margin: 0 auto;
     }
+   
+  
     #projects .project{
       box-shadow: 5px 5px 10px;
     }
@@ -375,7 +358,7 @@ html{
    form button:hover{
     transform: scale(1.1);
    
-    background-color:black;
+  
    }
    svg{
     position: absolute;
