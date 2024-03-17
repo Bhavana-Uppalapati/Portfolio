@@ -1,4 +1,6 @@
-
+html{
+  scroll-behavior: smooth;
+}
 :root{
     --primary-color:rgb(0,192,163);
    
@@ -8,8 +10,13 @@
     color: var(--primary-color)!important;
     
   }
+
   
-      
+    #banner img{
+      border: 5px solid rgb(0,192,163);
+      border-radius: 50%;
+  }
+    
       #banner{
       /* background: linear-gradient(64deg,white 50%,rgb(0,192,163) 50%); */
       height: 500px;
@@ -90,7 +97,9 @@
   }
   #banner img{
     position: relative;
+  
   }
+ 
   /* #about_me .about{
       background-color: var(--primary-color);
       height: 350px;
@@ -368,16 +377,28 @@
    
     background-color:black;
    }
-  
+   svg{
+    position: absolute;
+    bottom: 0;
+   }
+ 
   #footer{
+    position: relative;
    background-color: var(--primary-color);
     margin-top: 20px;
+   }
+   #footer .copy{
+    position: relative;
+    z-index: 10;
+
    }
    
    #footer a{
     color: white;
     text-decoration: none;
     font-size: 25px;
+    position: relative ;
+    z-index: 10;
    }
    @media screen and (max-width: 576px){
     #about_me .image img{
@@ -387,4 +408,4 @@
       flex-direction: column;
     }
    }
-    
+ 
