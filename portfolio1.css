@@ -1,8 +1,11 @@
 html{
   scroll-behavior: smooth;
+  
 }
+
 :root{
     --primary-color:rgb(0,192,163);
+
    
 }
 .navbar-nav a:hover{
@@ -24,6 +27,7 @@ html{
       place-items: center;
      
   }
+  
   #banner h4{
     color: var(--primary-color);
     width: 5.5rem;
@@ -113,21 +117,24 @@ html{
   #about_me img{
     animation: slide 3s;
     width: 500px;
+    
   }
   #about_me .about{
-    animation: moveleft 3s;
-  }
+    animation: moveleft 3s ;
+ }
   @keyframes slide{
-    from{
+    to{
       transform: translateX(0);
+      
     }
     from{
       transform: translateX(-50%);
+      
     }
     
   }
   @keyframes moveleft {
-    from{
+    to{
       transform: translateX(0);
     }
     from{
@@ -213,6 +220,7 @@ html{
       width: 0;
       background-color: var(--primary-color);
       animation: sql 2s forwards;
+      
     }
     @keyframes sql{
       0% {
@@ -261,7 +269,19 @@ html{
       margin: 0 auto;
     }
    
-  
+  #projects{
+    animation: fade-in 3s linear;
+    animation-timeline: view();
+    animation-range: entry;
+  }
+  @keyframes fade-in {
+    from{
+      scale: .7;
+    }
+    to{
+        scale:1;opacity:1
+    }
+  }
     #projects .project{
       box-shadow: 5px 5px 10px;
     }
@@ -367,14 +387,19 @@ html{
  
   #footer{
     position: relative;
-   background-color: var(--primary-color);
+   /* background-color: var(--primary-color); */
     margin-top: 20px;
    }
    #footer .copy{
     position: relative;
     z-index: 10;
-
-   }
+    font-size: large;
+    top: 10px;
+}
+#footer hr{
+  position: relative;
+  top: 23px;
+}
    
    #footer a{
     color: white;
@@ -390,5 +415,43 @@ html{
     #about_me .details{
       flex-direction: column;
     }
+    #contact_me form input,textarea{
+      width: 90%;
+    }
+    svg{
+      display: none;
+    }
+    footer{
+      background-color: var(--primary-color);
+    }
+    #footer .copy{
+      position: relative;
+      z-index: 10;
+      top: 0;
+}
+#footer hr{
+  top: 0;
+}
    }
  
+   @media screen  and(max-width: 768px) {
+    #footer .copy{
+      position: relative;
+      z-index: 10;
+      top: 15px;
+}
+#footer hr{
+  display: none;
+}
+   }
+@media screen and (min-width:768px) and (max-width: 1024px) {
+  #footer .copy{
+    position: relative;
+    z-index: 10;
+    top: 15px;
+}
+#footer hr{
+  top: 35px;
+}
+}
+   
