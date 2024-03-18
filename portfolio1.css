@@ -8,6 +8,7 @@ html{
 
    
 }
+
 .navbar-nav a:hover{
     text-decoration: underline;
     color: var(--primary-color)!important;
@@ -15,10 +16,37 @@ html{
   }
 
   
-    #banner img{
+    #banner img {
       border: 5px solid rgb(0,192,163);
       border-radius: 50%;
+      animation: fade 2s linear;
+      
+     
+}
+  @keyframes fade {
+    0%{
+      scale: .5;
+      opacity: 0;
+    }
+
+ 
+    50%{
+      scale: .8;
+      opacity: 0.5;
+      
+    }
+    100%{
+      scale: 1;
+      opacity: 1;
+  
+    }
+    
   }
+  #banner img:hover{
+    transform: scale(1.1);
+    background-color: var(--primary-color);
+  }
+
     
       #banner{
       /* background: linear-gradient(64deg,white 50%,rgb(0,192,163) 50%); */
@@ -30,8 +58,8 @@ html{
   
   #banner h4{
     color: var(--primary-color);
-    width: 5.5rem;
-     animation: type 3s steps(5) ;
+    width: 6.7rem;
+     animation: type 3s steps(5) infinite;
      overflow: hidden;
      display: inline-block;
      font-size: 33px;
@@ -76,17 +104,7 @@ html{
   
   
 
-  @keyframes move {
-             
-    50%{
-        border-radius:60% 40% 48% 52% / 45% 48% 52% 55%  ;
-    }
-   
-    100%{
-        border-radius:62% 38% 61% 39% / 47% 43% 57% 53% ;
-    }
-    
-  }
+  
   #banner img{
     position: relative;
   
@@ -244,7 +262,7 @@ html{
 
     
     
-    .education-item {
+   .education-item {
       margin-bottom: 15px;
       box-shadow: 5px 5px 10px;
       padding: 5px;
@@ -275,11 +293,21 @@ html{
     animation-range: entry;
   }
   @keyframes fade-in {
-    from{
-      scale: .7;
+    0%{
+      scale: .5;
+      
     }
-    to{
-        scale:1;opacity:1
+
+ 
+    50%{
+      scale: .8;
+      
+      
+    }
+    100%{
+      scale: 1;
+      
+  
     }
   }
     #projects .project{
@@ -375,7 +403,7 @@ html{
     width: 9.5rem;
     height: 2.7rem;
    }
-   form button:hover{
+   #ccontact_me form button:hover{
     transform: scale(1.1);
    
   
